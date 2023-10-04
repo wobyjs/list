@@ -14,8 +14,8 @@ Check out the [documentation &amp; demo](https://github.com/wongchichong/voby-li
 pnpm install voby-list
 ```
 
-<Details>
-<Summary>Usage<Summary>
+<details>
+<summary>Usage<summary>
 
 ```tsx
 import { MenuItem } from '../src/lib/MenuItem'
@@ -127,7 +127,7 @@ const App = () => <div class='w-[25%]'>
 render(<App />, document.getElementById('app'))
 ```
 
-</Details>
+</details>
 
 ## API
 
