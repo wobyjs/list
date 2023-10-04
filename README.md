@@ -15,7 +15,7 @@ pnpm install voby-list
 ```
 
 <details>
-<summary>Usage<summary>
+<summary>Usage</summary>
 
 ```tsx
 import { MenuItem } from '../src/lib/MenuItem'
