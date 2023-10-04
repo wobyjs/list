@@ -14,9 +14,8 @@ Check out the [documentation &amp; demo](https://github.com/wongchichong/voby-li
 pnpm install voby-list
 ```
 
-## Usage
-
-**Important**: Set the position of the hoverable parent component to *relative*.
+<Details>
+<Summary>Usage<Summary>
 
 ```tsx
 import { MenuItem } from '../src/lib/MenuItem'
@@ -127,6 +126,9 @@ const App = () => <div class='w-[25%]'>
 
 render(<App />, document.getElementById('app'))
 ```
+
+</Details>
+
 ## API
 
 ## License
