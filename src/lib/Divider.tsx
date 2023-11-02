@@ -1,4 +1,4 @@
-import { ObservableMaybe, $$ } from 'voby'
+import { ObservableMaybe, $$, type JSX } from 'woby'
 
 export const Divider = ({ vertical, className, ...props }: JSX.HrHTMLAttributes<HTMLHRElement> & { vertical?: ObservableMaybe<boolean> }) => {
     const cls = props.class

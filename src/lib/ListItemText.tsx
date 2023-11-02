@@ -1,4 +1,4 @@
-import { JSX } from 'voby'
+import { JSX } from 'woby'
 
 type ListType = {
     primary?: JSX.Element

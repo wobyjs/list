@@ -1,5 +1,4 @@
-import { tw } from 'voby-styled'
-import { } from 'voby/dist/types/jsx/types'
+import { tw } from 'woby-styled'
 
 export const MenuItem = tw('li')`min-h-[auto] bg-transparent cursor-pointer select-none align-middle appearance-none text-inherit font-normal text-base leading-normal tracking-[0.00938em] flex justify-start items-center relative no-underline box-border whitespace-nowrap m-0 px-4 py-1.5 rounded-none border-0 [outline:0px] hover:no-underline hover:bg-[rgba(0,0,0,0.04)]`
 export const ListItem = MenuItem

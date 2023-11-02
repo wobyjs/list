@@ -3,9 +3,9 @@ import { MenuList } from '../src/lib/MenuList'
 import { ListItemIcon } from '../src/lib/ListItemIcon'
 import { ListItemSecondaryAction } from '../src/lib/ListItemSecondaryAction'
 import { ListItemText } from '../src/lib/ListItemText'
-import { tw } from 'voby-styled'
+import { tw } from 'woby-styled'
 
-import { render, $ } from 'voby'
+import { render, $ } from 'woby'
 import '../dist/output.css'
 
 const Paper = tw('div')`elevation-3`
