@@ -1,4 +1,4 @@
-# voby-list
+# woby-list
 
 
 
@@ -11,7 +11,7 @@ Check out the [documentation &amp; demo](https://github.com/wongchichong/woby-li
 ### NPM
 
 ```bash
-pnpm install voby-list
+pnpm install woby-list
 ```
 
 <details>
