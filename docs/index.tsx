@@ -1,8 +1,8 @@
-import { MenuItem } from '../src/lib/MenuItem'
-import { MenuList } from '../src/lib/MenuList'
-import { ListItemIcon } from '../src/lib/ListItemIcon'
-import { ListItemSecondaryAction } from '../src/lib/ListItemSecondaryAction'
-import { ListItemText } from '../src/lib/ListItemText'
+import { MenuItem } from '../src/MenuItem'
+import { MenuList } from '../src/MenuList'
+import { ListItemIcon } from '../src/ListItemIcon'
+import { ListItemSecondaryAction } from '../src/ListItemSecondaryAction'
+import { ListItemText } from '../src/ListItemText'
 import { tw } from 'woby-styled'
 
 import { render, $ } from 'woby'

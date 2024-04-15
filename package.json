@@ -7,15 +7,19 @@
     "browser": "./dist/index.umd.js",
     "types": "./dist/types/index.d.ts",
     "scripts": {
+        "git": "git add . && git commit -m \"Bump version\" && git push",
+        "bump": "pnpm version patch",
+        "npmjs": "pnpm publish",
+        "release": "run-s -c git bump npmjs",
         "css:watch": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
         "css": "tailwindcss -i ./src/input.css -o ./dist/output.css",
-        "declaration": "tsc --build --force --declaration --emitDeclarationOnly --verbose",
-        "declaration:watch": "tsc --build --force --declaration --emitDeclarationOnly --verbose --watch",
+        "declaration": "tsc --build --force --declaration --emitDeclarationOnly --declarationMap  --verbose",
+        "declaration:watch": "tsc --build --force --declaration --emitDeclarationOnly --declarationMap  --verbose --watch",
         "watch": "run-p build:watch css:watch",
-        "build": "run-s css build:vite css",
-        "build:web": "vite build --config=vite.config.web.ts --force --mode production",
-        "web": "vite preview --config=vite.config.web.ts --host",
-        "dev:only": "vite --config=vite.config.web.ts --force --mode dev --host",
+        "build": "run-s css build:vite css declaration",
+        "build:web": "vite build --config=vite.config.web.mts --mode production",
+        "web": "vite preview --config=vite.config.web.mts --host",
+        "dev:only": "vite --config=vite.config.web.mts --force --mode dev --host",
         "dev": "run-p css:watch dev:only",
         "build:vite": "vite build",
         "build:watch": "vite build --watch",
@@ -30,21 +34,24 @@
     ],
     "license": "MIT",
     "peerDependencies": {
-        "woby": "workspace:^",
-        "woby-styled": "workspace:^"
+        "woby": "workspace:../woby",
+        "woby-styled": "workspace:../woby-styled"
     },
     "devDependencies": {
         "prismjs": "^1.15.0",
-        "style-loader": "^0.21.0",
-        "tailwindcss": "^3.4.1",
+        "style-loader": "^4.0.0",
+        "tailwindcss": "^3.4.3",
         "tailwindcss-elevation": "^2.0.0",
-        "vite": "^4.5.2",
-        "vite-plugin-dts": "^2.3.0"
+        "vite": "^5.2.8",
+        "vite-plugin-tsconfig": "^1.0.5"
     },
     "author": "Chi Chong <wongchichong@gmail.com>",
     "homepage": "https://github.com/wongchichong/woby-list",
     "repository": {
         "type": "git",
         "url": "git@github.com:wongchichong/woby-list.git"
+    },
+    "dependencies": {
+        "typescript": "5.4.4"
     }
 }
