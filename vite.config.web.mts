@@ -1,4 +1,5 @@
 import { defineConfig } from 'vite'
+import tailwindcss from '@tailwindcss/vite'
 import path from 'path'
 import tsconfig from 'vite-plugin-tsconfig'
 // import dts from 'vite-plugin-dts'
@@ -20,12 +21,13 @@ const config = defineConfig({
     },
     plugins: [
         // dts({ entryRoot: './src', outputDir: './dist/types' })
-        tsconfig({ filename: 'tsconfig.web.json' })
+        tsconfig({ filename: 'tsconfig.web.json' }),
+        tailwindcss(),
     ],
     resolve: {
         alias: {
             '~': path.resolve(__dirname, 'src'),
-            'woby/jsx-dev-runtime': process.argv.includes('dev') ? path.resolve('../woby/src/jsx/runtime') : 'woby', //'woby/jsx-dev-runtime',
+            'woby/jsx-dev-runtime': process.argv.includes('dev') ? path.resolve('../woby/src/jsx/runtime') : 'woby', //'woby',
             'woby/jsx-runtime': process.argv.includes('dev') ? path.resolve('../woby/src/jsx/runtime') : 'woby', //'woby / jsx - runtime',
             'woby': process.argv.includes('dev') ? path.resolve('../woby/src') : 'woby'
         },

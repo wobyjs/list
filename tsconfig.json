@@ -30,6 +30,7 @@
         "noPropertyAccessFromIndexSignature": false,
         "noUnusedLocals": false,
         "noUnusedParameters": false,
+        "rootDir": "src",
         "outDir": "dist",
         "pretty": true,
         "skipDefaultLibCheck": true,
@@ -45,7 +46,6 @@
         "noImplicitAny": false,
         "noUncheckedIndexedAccess": false,
         "baseUrl": ".",
-        "rootDir": "./src",
         "typeRoots": [
             "types"
         ],

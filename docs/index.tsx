@@ -3,7 +3,7 @@ import { MenuList } from '../src/MenuList'
 import { ListItemIcon } from '../src/ListItemIcon'
 import { ListItemSecondaryAction } from '../src/ListItemSecondaryAction'
 import { ListItemText } from '../src/ListItemText'
-import { tw } from 'woby-styled'
+import { tw } from '@woby/styled'
 
 import { render, $ } from 'woby'
 import '../dist/output.css'

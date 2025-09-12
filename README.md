@@ -1,17 +1,17 @@
-# woby-list
+# @woby/list
 
 
 
 ## DEMO
 
-Check out the [documentation &amp; demo](https://github.com/wongchichong/woby-list/) pages to see all use cases.
+Check out the [documentation &amp; demo](https://github.com/wobyjs/list/) pages to see all use cases.
 
 ## Installation
 
 ### NPM
 
 ```bash
-pnpm install woby-list
+pnpm install @woby/list
 ```
 
 <details>
@@ -23,7 +23,7 @@ import { MenuList } from '../src/lib/MenuList'
 import { ListItemIcon } from '../src/lib/ListItemIcon'
 import { ListItemSecondaryAction } from '../src/lib/ListItemSecondaryAction'
 import { ListItemText } from '../src/lib/ListItemText'
-import { tw } from 'woby-styled'
+import { tw } from '@woby/styled'
 
 import { render, $ } from 'woby'
 import '../dist/output.css'

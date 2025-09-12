@@ -1,4 +1,4 @@
-import { tw } from 'woby-styled'
+import { tw } from '@woby/styled'
 //@ts-ignore
 import { ObservableMaybe, ObservableReadonly, type JSX } from 'woby'
 
