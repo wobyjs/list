@@ -33,7 +33,7 @@
         "notification",
         "menu",
         "woby",
-        "woby-component"
+        "@woby/component"
     ],
     "license": "MIT",
     "peerDependencies": {
@@ -50,7 +50,7 @@
         "vite-plugin-tsconfig": "^1.0.5"
     },
     "author": "Chi Chong <wongchichong@gmail.com>",
-    "homepage": "https://github.com/wongchichong/list",
+    "homepage": "https://github.com/wobyjs/list",
     "repository": {
         "type": "git",
         "url": "git@github.com:wongchichong/list.git"
